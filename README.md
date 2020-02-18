@@ -20,6 +20,4 @@ Include the file `fm_scrollpage.js` in your page.
 
 ## Options
 
-More info to come...# fm_scrollpage
-
-More details to come shortly
+More info to come...
