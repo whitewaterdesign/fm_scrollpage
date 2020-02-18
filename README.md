@@ -20,4 +20,8 @@ Include the file `fm_scrollpage.js` in your page.
 
 ## Options
 
+- **height**
+  Set this option in px or % to display the height of the fm_scrollpage box
+  *default: 696px*
+
 More info to come...
