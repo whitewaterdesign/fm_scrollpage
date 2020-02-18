@@ -1,0 +1,99 @@
+$small: 576px;
+$large-width: 992px;
+$large-height: 838px;
+$height: 696px;
+
+.fm_scroll_wrap {
+    overflow:hidden;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    @media screen and (min-width:$large-width) and (min-height:$large-height) {
+        height:$height;
+
+        a.scroll-notice.up {
+            bottom:22px;
+        }
+    }
+
+    .fm_scrollpage {
+		transform: none;
+
+		@media screen and (min-width:$large-width) and (min-height:$large-height) {
+			transform: translateY(0px);
+			-webkit-transition: -webkit-transform 500ms ease-in-out;
+			transition: -webkit-transform 500ms ease-in-out;
+			-o-transition: transform 500ms ease-in-out;
+			transition: transform 500ms ease-in-out;
+			transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+		}
+
+		a.scroll-notice {
+			width:100%;
+			max-width:853px;
+			background-image:url('arrow-down.png');
+			background-repeat:no-repeat;
+			background-position:bottom center;
+			text-align:center;
+			padding-bottom:22px;
+			margin-top:20px;
+			display: none;
+
+			@media screen and (min-width:$large-width) and (min-height:$large-height) {
+				display: block;
+			}
+
+			&:hover {
+				text-decoration:none;
+			}
+			
+			&.up, &.upOne {
+				background-image:url('arrow-up.png');
+				background-position:top center;
+				padding-top:22px;
+				margin-top:32px;
+				padding-bottom:0px;
+				color:#fff;
+
+				@media screen and (min-width:$large-width) and (min-height:$large-height) {
+					position: absolute;
+				}
+			}
+
+			&.upOne {
+				position: relative !important;
+				margin-top: -22px;
+				top: -19px;
+			}
+
+		}
+
+		section {
+			padding:18px;
+            position:relative;
+
+            p {
+                margin-top:0;
+            }
+
+			@media screen and (min-width: $large-width) and (min-height:$large-height) {
+				height:$height;
+			}
+
+			.img-only-active {
+				opacity: 1;
+				transition: opacity 0.5s ease-in-out;
+
+				@media only screen and (min-width:$large-width) and (min-height: $large-height) {
+					opacity: 0;
+				}
+			}
+
+			&.active .img-only-active {
+				opacity: 1;
+			}
+		}
+	}
+}
