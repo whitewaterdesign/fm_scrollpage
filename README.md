@@ -1,4 +1,4 @@
-# fm_scrollpage
+# jQuery Framed Scrollpage plugin (fm_scrollpage)
 
 More details to come shortly
 

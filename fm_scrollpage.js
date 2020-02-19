@@ -17,7 +17,7 @@ $( document ).ready(function() {
             options.height = parseInt(options.height);
         } 
         else {
-            options.height = this.children().outerHeight();
+            options.height = 696;
             options.units = "px";
         }
 
@@ -38,8 +38,8 @@ $( document ).ready(function() {
             var lastSlideClass = "";
         }
 
-        if(!options.noLastSlide) {
-            lastSlideClass += " projectsEnd";
+        if(options.changeLastSlide) {
+            lastSlideClass += " scrollpage_end";
         }
 
         var myData = {
